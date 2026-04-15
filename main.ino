@@ -17,15 +17,18 @@
 #define SX(x) ((x) + X_OFFSET)                   // Übersetzt Spielfeld-X in physische Display-X-Koordinate.
 #define SY(y) ((y) + Y_OFFSET)                   // Übersetzt Spielfeld-Y in physische Display-Y-Koordinate.
 
-#define SDA_PIN D2                               // Definiert den I2C-SDA-Pin auf D2.
-#define SCL_PIN D1                               // Definiert den I2C-SCL-Pin auf D1.
+#define SDA_PIN D5                               // Definiert den I2C-SDA-Pin auf D5.
+#define SCL_PIN D7                               // Definiert den I2C-SCL-Pin auf D7.
 
 #define ADXL345_ADDR 0x53                        // Definiert die I2C-Adresse des ADXL345.
 #define ADXL345_REG_POWER_CTL 0x2D               // Definiert das Power-Control-Register.
 #define ADXL345_REG_DATA_FORMAT 0x31             // Definiert das Datenformat-Register.
 #define ADXL345_REG_DATAX0 0x32                  // Definiert das erste Datenregister (X0).
 
-#define BUZZER_PIN D5                            // Definiert den Buzzer-Pin auf D5 (anpassbar).
+#define ADXL345_INT2_PIN D6                      // Definiert den INT2-Pin des ADXL345 auf D6.
+#define ADXL345_CS_PIN D3                        // Definiert den CS-Pin des ADXL345 auf D3 (nicht genutzt bei I2C).
+
+#define BUZZER_PIN D8                            // Definiert den Buzzer-Pin auf D8.
 
 #define FRAME_MS 33                              // Definiert die Framedauer auf ca. 30 FPS.
 #define GRAVITY 0.20f                            // Definiert die Schwerkraft pro Frame.
