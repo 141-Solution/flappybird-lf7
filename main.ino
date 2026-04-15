@@ -292,8 +292,7 @@ void setup() {                                    // Führt die Initialisierung 
 
   randomSeed(analogRead(A0));                    // Initialisiert Zufall mit analogem Rauschen.
   resetGame();                                   // Setzt Spielzustand auf Anfang.
-  gameState = READY;                             // Wechselt in den Startbildschirm.
-  drawReadyScreen();                             // Zeichnet initialen Startbildschirm.
+  gameState = PLAYING;                           // Startet das Spiel direkt.
 
   Serial.println("Setup abgeschlossen");        // Meldet Abschluss der Initialisierung.
 }
